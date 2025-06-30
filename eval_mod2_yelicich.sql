@@ -155,3 +155,13 @@ SELECT
     rating
 FROM film AS f
 WHERE rating = "R" AND length > 120;
+
+-- BONUS
+-- 18. Muestra el nombre y apellido de los actores que aparecen en más de 10 películas.
+-- 19. Hay algún actor o actriz que no apareca en ninguna película en la tabla film_actor.
+-- 20. Encuentra las categorías de películas que tienen un promedio de duración superior a 120 minutos y
+-- 21. Encuentra los actores que han actuado en al menos 5 películas y muestra el nombre del actor junto con la cantidad de películas en las que han actuado.
+-- 22. Encuentra el título de todas las películas que fueron alquiladas por más de 5 días. Utiliza una subconsulta para encontrar los rental_ids con una duración superior a 5 días y luego selecciona las películas correspondientes.
+-- 23. Encuentra el nombre y apellido de los actores que no han actuado en ninguna película de la categoría "Horror". Utiliza una subconsulta para encontrar los actores que han actuado en películas de la categoría "Horror" y luego exclúyelos de la lista de actores.
+-- 24. Encuentra el título de las películas que son comedias y tienen una duración mayor a 180 minutos en la tabla film.
+-- 25. Encuentra todos los actores que han actuado juntos en al menos una película. La consulta debe mostrar el nombre y apellido de los actores y el número de películas en las que han actuado juntos.
