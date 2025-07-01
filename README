@@ -1,0 +1,78 @@
+# 🎬 Sistema de Gestión de Alquiler de Películas - Proyecto Base de Datos
+
+Este proyecto consiste en el diseño y consulta de una base de datos para una **tienda de alquiler de películas**. El sistema simula operaciones reales como: consultar peliculas, alquilar películas, consultar duración y categorías, así como gestionar el catálogo de actores y películas disponibles.
+
+La base de datos utilizada es una versión educativa basada en **Sakila**, la cual refleja un negocio de alquiler de películas clásico.
+
+---
+
+## 🏗️ Objetivo del Proyecto
+
+Crear y consultar una base de datos relacional que permita:
+
+- Administrar películas, actores, categorías y clientes.
+- Realizar análisis como películas más alquiladas, duración promedio, categorías más populares, etc.
+- Obtener información útil para la gestión del negocio.
+
+---
+
+## 🔧 Requisitos Técnicos
+
+- **MySQL***
+- Herramienta de consultas (MySQL Workbench)
+- Base de datos Sakila
+
+---
+
+## 🧩 Estructura de la Base de Datos (Resumen)
+
+- `film` – Información de las películas (duración, clasificación, etc.)
+- `actor` – Nombres de actores y actrices
+- `film_actor` – Relación de actores en cada película
+- `category` – Géneros o tipos de películas (comedia, acción, etc.)
+- `film_category` – Relación entre películas y categorías
+- `customer` – Datos de los clientes
+- `rental` – Historial de alquileres
+- `inventory` – Copias físicas disponibles de cada película
+
+---
+
+## 📚 Consultas Realizadas
+
+Las consultas SQL están agrupadas en los siguientes temas:
+
+### 📌 1. Consultas Básicas
+- Listar títulos de películas sin duplicados
+- Buscar películas clasificadas como “PG-13”
+- Películas con duración mayor a 120 minutos
+- Actores con apellidos específicos como "Gibson"
+
+### 🔗 2. JOINs y Relaciones
+- Ver cuántas películas ha alquilado cada cliente
+- Categorías más populares según cantidad de alquileres
+- Actores que han trabajado juntos
+- Actores que no participaron en películas de terror
+
+### 📊 3. Agregaciones y Estadísticas
+- Cantidad de películas por clasificación (`GROUP BY`)
+- Promedio de duración por clasificación y por categoría
+- Actores que han actuado en más de 5 películas
+
+### 🧠 4. Subconsultas y Lógica Avanzada
+- Películas alquiladas por más de 5 días
+- Actores excluidos de ciertas categorías
+- Películas en la misma categoría que una específica (“Family”, por ejemplo)
+
+---
+
+## 📁 Archivos incluidos
+
+- `README.md` – Documentación del proyecto
+
+---
+
+## 👨‍💻 Desarrollador
+
+Este proyecto fue desarrollado por un perfil **junior en bases de datos** como parte de un entrenamiento práctico en SQL relacional, modelado de datos y análisis de información sobre el dominio del entretenimiento.
+
+---
